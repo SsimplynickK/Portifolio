@@ -1,0 +1,55 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Project title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the project"
+    },
+    "long_description": {
+      "type": "string",
+      "description": "Detailed markdown description"
+    },
+    "folder": {
+      "type": "string",
+      "description": "Folder/category name for organizing projects"
+    },
+    "tech_stack": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Technologies used"
+    },
+    "live_url": {
+      "type": "string",
+      "description": "Link to live project"
+    },
+    "repo_url": {
+      "type": "string",
+      "description": "Link to source code"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Project screenshot or thumbnail"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to feature on homepage"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order within folder"
+    }
+  },
+  "required": [
+    "title",
+    "folder"
+  ]
+}
