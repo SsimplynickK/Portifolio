@@ -192,6 +192,6 @@ app.delete("/api/posts/:id", (req, res) => {
   });
 });
 
-app.listen(3001, () => {
-  console.log("API running on port 3001");
+app.listen(9696, () => {
+  console.log("API running on port 9696");
 });
